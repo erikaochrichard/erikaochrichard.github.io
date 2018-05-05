@@ -1,3 +1,69 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the main navigation of the site/application.
 // -----------------------------------------------------------------------------
+
+
+.main-navigation {
+  background: white;
+  padding: 0 !important;
+  border-bottom: 1px solid rgba(#736649,.25);
+  box-shadow: 0px 2px 4px rgba(black,.1);
+
+  ul a.nav-link {
+    position: relative;
+    color: theme-color('secondary-dark');
+    font-family: $font-family-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    //border: 1px solid red;
+
+    &::after {
+      content: "/";
+      @include position(absolute, 0 0 0 null);
+      transform: translateX(50%);
+      color: rgba(black,.5);
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 1.5rem !important;
+      height: $main-navigation-height-lg;
+      line-height: $main-navigation-height-lg;
+
+      &::after {
+        height: $main-navigation-height-lg;
+        line-height: $main-navigation-height-lg;
+      }
+    }
+  }
+
+  ul .nav-item:last-child a::after  {
+    display: none;
+  }
+
+  ul .nav-item {
+    .nav-link:hover,
+    .active {
+      color: theme-color('primary');
+    }
+  }
+
+
+    // Nav bar Toggle
+
+    .navbar-toggler {
+      width: 100%;
+      font-size: $font-size-base;
+      color: theme-color('primary');
+      font-family: $font-family-serif;
+      letter-spacing: 1px;
+      padding: 0;
+      height: $main-navigation-height-sm;
+      line-height: $main-navigation-height-sm;
+
+      @include media-breakpoint-up(md) {
+        height: $main-navigation-height-md;
+        line-height: $main-navigation-height-md;
+      }
+    }
+
+}

@@ -3,8 +3,16 @@
 // -----------------------------------------------------------------------------
 
 .site-header {
-  background: black;
-  min-height: 90vh;
+  background: gray;
+  min-height: calc(100% - #{$main-navigation-height-sm});
+
+  @include media-breakpoint-up(md) {
+    min-height: calc(100% - #{$main-navigation-height-md});
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: calc(100% - #{$main-navigation-height-lg});
+  }
+  padding: 5rem 0;
   height: auto;
   display: flex;
   justify-content: center;
@@ -12,6 +20,22 @@
 
 
   .site-branding {
-    background: blue;
+    padding: 4rem 2rem;
+    text-shadow:  0 2px 4px rgba(black,.5),
+                  0 0px 32px rgba(black,.25);
+    border: 3px solid #D8C986;
+    border-image: linear-gradient(45deg, #A98853, #D8C986) 3 repeat;
+    box-shadow: 0 2px 4px rgba(black,.5),
+          inset 0 2px 4px rgba(black,.5);
+
+    span {
+      display: inline-block;
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      margin-bottom: 0.5em;
+    }
+
   }
 }
