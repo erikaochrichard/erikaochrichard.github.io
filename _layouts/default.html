@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="sv_SE">
+{% include head.html %}
+<body>
+  <!--[if lt IE 9]>
+          <p class="browserupgrade">Du använder en <strong>föråldrad</strong> webbläsare. Vänligen <a href="http://browsehappy.com/">uppdatera din webbläsare</a> för att förbättra din upplevelse.</p>
+      <![endif]-->
+
+  {% include site-header.html %}
+  <main class="page-content">
+      {% include main-navigation.html %}
+      {{ content }}
+  </main>
+</body>

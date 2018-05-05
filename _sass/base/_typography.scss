@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// Basic typography style for copy text
+// -----------------------------------------------------------------------------
+
+
+/**
+ * Improve font readability/beautifullness with font smoothing
+ * https://davidwalsh.name/font-smoothing
+ */
+
+body {
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

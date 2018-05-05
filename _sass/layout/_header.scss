@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.site-header {
+  background: black;
+  min-height: 90vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .site-branding {
+    background: blue;
+  }
+}

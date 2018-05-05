@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: theme-color("primary");
+  text-decoration: none;
+
+  @include on-event {
+    color: theme-color("primary");
+    text-decoration: underline;
+  }
+}
