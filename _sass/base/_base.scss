@@ -7,6 +7,12 @@ html, body {
   height: 100%;
 }
 
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative; /* For the scrollspy menu */
+}
+
 /**
  * Basic styles for links
  */
