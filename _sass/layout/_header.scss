@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .site-header {
-  background: gray;
+  background: theme-color("primary");
   min-height: calc(100% - #{$main-navigation-height-sm});
 
   @include media-breakpoint-up(md) {
